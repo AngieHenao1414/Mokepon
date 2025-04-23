@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mokepon!</title>
+    <script src="./js/mokepon.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section id="seleccionar-mascota">
+
+      <div class="titulos-seccion">
+        <h1>MOKEPON!</h1>
+        <img src="saturno.png" />
+      </div>
+      <div class="subtitulos">
+         Elige tu mascota: 
+      </div>
+
+
+      <div class="tarjetas">
+        <label class="tarjeta-mokepon" for="hipodoge">
+            <p>Hipodoge</p>
+            <img src="hipodoge.jpg" alt="hipodoge"/>
+        </label>
+        <input type="radio" name="mascota" id="hipodoge" />
+        
+        <label class="tarjeta-mokepon" for="capipepo">
+            <p>Capipepo</p>
+            <img src="capipepo.jpg" alt="Capipepo">
+        </label>
+        <input type="radio" name="mascota" id="capipepo" />
+        
+        <label class="tarjeta-mokepon" for="ratigueya">
+            <p>Ratigueya</p>
+            <img src="ratigueya.jpg" alt="Ratigueya">
+        </label>
+        <input type="radio" name="mascota" id="ratigueya" />
+    </div>
+<!--<div class="tarjetas">
+        <label class="tarjeta-mokepon" for="hipodoge">
+      
+       <div class   <p>Hipodoge</p>
+          <img src="hipodoge.jpg"/>
+        </label>
+        <input type="radio" name="mascota" id="hipodoge" />
+
+
+        <label class="tarjeta-mokepon" for="capipepo">
+          <p>Capipepo</p>        
+          <img src="capipepo.jpg"/>
+        </label>
+        <input type="radio" name="mascota" id="hipodoge" />
+
+        <label class="tarjeta-mokepon" for="ratigueya">
+          <p>Ratigueya</p>
+          <img src="ratigueya.jpg"/>
+        </label>
+        <input type="radio" name="mascota" id="ratigueya" />               
+      </div> -->
+      
+      <button id="boton-mascota">Seleccionar</button>
+    </section>
+
+    <section id="seleccionar-ataque">
+      <div class="titulos-seccion">
+        <h1>MOKEPON!</h1>
+      </div>
+      <div class="subtitulos">
+        Elige tu Ataque
+     </div>
+      
+      <div>
+        <button id="boton-fuego" class="boton-de-ataque">Fuego 🔥</button>
+        <button id="boton-agua"  class="boton-de-ataque">Agua 💧</button>
+        <button id="boton-tierra"class="boton-de-ataque">Tierra 🌱</button>
+      </div>
+
+      
+        <div id="mensajes">
+          <p id="resultado">Mucha suerte</p>
+        </section>
+
+        <section id="reiniciar">
+        <button id="boton-reiniciar">Reiniciar</button>
+        </div>
+      
+
+      <div>
+        <div id="ataque-del-jugdor"></div>
+        <div id="ataque-del-enemigo"></div> 
+      <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas </p>
+      <p>Tu mascota <span id="mascota-enemigo"></span> tiene <span id="vidas-enemigo">3</span> vidas </p>
+      </div>
+    
+    </section>
+  </body>
+</html>

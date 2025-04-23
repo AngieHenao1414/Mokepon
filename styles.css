@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.titulos-seccion{
+    display: flex;  
+}
+.titulos-seccion h1{
+    color: white;
+    width: 370px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 80px;
+}
+.subtitulos{
+    color: white;
+    width: 400px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 60px;
+
+}
+.titulos-seccion img{
+    width: 130px;
+    height: 110px; 
+     object-fit: fill;
+    }
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+body {
+    background: url(fondo1.jpg);
+    background-size: cover;
+    
+}
+.tarjetas {
+display: flex;
+gap: 10px;
+}
+.tarjeta-mokepon {
+    width: 450px;
+    height: 200px;
+    background-color: coral;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: "Shadows Into Light", cursive;
+    color: black;
+    text-shadow: 1px 1px 1px rgb(255, 179, 0);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 50px;
+    }
+
+.tarjeta-mokepon img{
+    border-radius: 10px;
+    width: 200px;
+    object-fit: fill 
+}
+#boton-mascota{
+    height: 57px;
+    width: 152px;
+    border-radius: 40px;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 25px;
+    background: pink;
+    margin: 30px 10px 20px 10px;
+}
+input {
+    display: none;
+}
+#seleccionar-ataque{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    
+}
+.boton-de-ataque{
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: pink;
+    border-color: transparent;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 25px;
+    margin: 20px;
+}
+#mensajes{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    background-color: pink;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    font-family: "Shadows Into Light", cursive;
+}
+#boton-reiniciar{
+    border: none;
+    color: pink;
+    font-family: "Shadows Into Light", cursive;
+}
+
+
+
+
