@@ -112,6 +112,16 @@ input {
     color: pink;
     font-family: "Shadows Into Light", cursive;
 }
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+  }
+  
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
 
 
 
