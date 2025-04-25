@@ -43,12 +43,12 @@ body {
     background-size: cover;
     
 }
-.tarjetas {
+.tarjetas, .tarjetas-ataques {
 display: flex;
 gap: 10px;
 }
 .tarjeta-mokepon {
-    width: 450px;
+    width: 400px;
     height: 200px;
     background-color: coral;
     padding: 10px;
@@ -80,10 +80,15 @@ gap: 10px;
 input {
     display: none;
 }
+input:checked + label {
+    background-color: rgb(245, 201, 8);
+}
+
 #seleccionar-ataque{
         flex-direction: column;
         align-items: center;
         display: flex;
+        
     
 }
 .boton-de-ataque{
@@ -95,6 +100,7 @@ input {
     font-family: "Shadows Into Light", cursive;
     font-size: 25px;
     margin: 20px;
+
 }
 #mensajes{
     width: 280px;
@@ -122,7 +128,22 @@ input {
     font-size: 32px;
     margin-bottom: 0;
   }
+  .ataqueJugador, .ataquesEnemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 25px;
+  }
 
+@media (max-width: 800px){
+    .tarjetas {
+    flex-direction: column;
+}
+.tarjetas-ataques{
+    display: contents;
+}
+}
 
 
 
