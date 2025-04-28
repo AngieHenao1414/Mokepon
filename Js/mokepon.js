@@ -21,6 +21,8 @@ const sectionMensajes = document.getElementById('resultado')
 const ataquesDelJugador = document.getElementById('ataques-del-jugador')
 const ataquesDelEnemigo = document.getElementById('ataques-del-enemigo')
 
+const eligirMascotaJugador = document.getElementsByClassName('mascotas')
+
 
 
 let ataqueJugador
@@ -32,12 +34,14 @@ function iniciarJuego() {
     
     sectionSeleccionarAtaque.style.display = 'none'
     sectionReiniciar.style.display = 'none'
-
     botonMascotaJugador.addEventListener('click', seleccionarMascotaJugador)
     botonFuego.addEventListener('click', ataqueFuego)
     botonAgua.addEventListener('click', ataqueAgua)
     botonTierra.addEventListener('click', ataqueTierra)
     botonReiniciar.addEventListener('click', reiniciarJuego)
+    eligirMascotaJugador[0].addEventListener('click', activarBoton)
+    eligirMascotaJugador[1].addEventListener('click', activarBoton)
+    eligirMascotaJugador[2].addEventListener('click', activarBoton)
 }
 
 function seleccionarMascotaJugador() {
@@ -50,11 +54,12 @@ sectionSeleccionarAtaque.style.display = 'flex'
         spanMascotaJugador.innerHTML = 'Capipepo'
     } else if (inputRatigueya.checked) {
         spanMascotaJugador.innerHTML = 'Ratigueya'
-    } else {
-        alert('Selecciona una mascota')
-    }
-
+    } 
+    activarBoton()
     seleccionarMascotaEnemigo()
+}
+function activarBoton(){
+    botonMascotaJugador.removeAttribute('disabled');  
 }
 
 function seleccionarMascotaEnemigo() {
@@ -92,7 +97,6 @@ function ataqueAleatorioEnemigo() {
     } else {
         ataqueEnemigo = 'TIERRA'
     }
-
     combate()
 }
 

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-
 .titulos-seccion{
     display: flex;  
 }
@@ -35,12 +34,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
 }
 
 body {
     background: url(fondo1.jpg);
     background-size: cover;
+    margin: 0;
     
 }
 .tarjetas, .tarjetas-ataques {
@@ -61,6 +60,10 @@ gap: 10px;
     display: flex;
     justify-content: space-evenly;
     font-size: 50px;
+    cursor: pointer;
+}
+.tarjeta-mokepon:hover{
+    background-color: yellow;
 }
 
 .tarjeta-mokepon img{
@@ -77,22 +80,24 @@ gap: 10px;
     background: pink;
     margin: 30px 10px 20px 10px;
     font-weight: 700;
+    cursor: pointer;
+}
+#boton-mascota:hover{
+    background-color: yellow;
+    font-size: 18px;
 }
 input{
     display: none;
 }
    
 input:checked + label {
-    background-color: rgb(245, 201, 8);
+    background-color: yellow;
     font-weight: 900;
 }
 
 #seleccionar-ataque{
         flex-direction: column;
-        align-items: center;
-        display: flex;
-        
-    
+        align-items: center;   
 }
 .boton-de-ataque,#boton-reiniciar{
     padding: 30px;
@@ -105,8 +110,14 @@ input:checked + label {
     margin: 20px;
     font-weight: 700;
 }
-#boton-reiniciar:active{
-    background-color: blueviolet;
+.boton-de-ataque:hover{
+    border-color: blue;
+}
+
+
+
+#boton-reiniciar:hover{
+    background-color: yellow;
 }
 #mensajes{
     width: 280px;
@@ -128,7 +139,7 @@ input:checked + label {
   
 #vidas-jugador, #vidas-enemigo {
     font-size: 32px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
   .ataqueJugador, .ataquesEnemigo{
     display: flex;
@@ -139,13 +150,13 @@ input:checked + label {
     font-weight: 700;
   }
 
-@media (max-width: 800px){
+@media (max-width:1220px){
     .tarjetas {
     flex-direction: column;
-}
-.tarjetas-ataques{
+    }
+    .tarjetas-ataques{
     display: contents;
-}
+    }
 }
 
 

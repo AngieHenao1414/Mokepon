@@ -18,19 +18,19 @@
 
 
       <div class="tarjetas">
-        <input type="radio" name="mascota" id="hipodoge" />
+        <input type="radio" name="mascota" id="hipodoge" class="mascotas"/>
         <label class="tarjeta-mokepon" for="hipodoge">
             <p>Hipodoge</p>
             <img src="hipodoge.jpg" alt="hipodoge"/>
         </label>
         
-        <input type="radio" name="mascota" id="capipepo" />
+        <input type="radio" name="mascota" id="capipepo" class="mascotas"/>
         <label class="tarjeta-mokepon" for="capipepo">
             <p>Capipepo</p>
             <img src="capipepo.jpg" alt="Capipepo">
         </label>
         
-        <input type="radio" name="mascota" id="ratigueya" />
+        <input type="radio" name="mascota" id="ratigueya" class="mascotas"/>
         <label class="tarjeta-mokepon" for="ratigueya">
             <p>Ratigueya</p>
             <img src="ratigueya.jpg" alt="Ratigueya">
@@ -38,8 +38,10 @@
         
     </div>
       
-      <button id="boton-mascota">Seleccionar</button>
+      <button id="boton-mascota" disabled >Seleccionar</button>
+      
     </section>
+    
 
     <section id="seleccionar-ataque">
       <div class="titulos-seccion">
@@ -56,12 +58,11 @@
   </div>
 
   <div id="mensajes">
-      <div id="resultado">Mucha suerte</div>
-
-      <section id="reiniciar">
-          <button id="boton-reiniciar">Reiniciar</button>
-      </section>
+      <div id="resultado">Mucha suerte</div>          
   </div>
+  <section id="reiniciar">
+    <button id="boton-reiniciar">Reiniciar</button>
+  </section>
 
   <div class="ataques">
     <div class="ataqueJugador">
