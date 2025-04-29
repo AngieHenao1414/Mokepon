@@ -37,7 +37,7 @@
 }
 
 body {
-    background: url(fondo1.jpg);
+    background: url(./assets/fondo1.jpg);
     background-size: cover;
     margin: 0;
     
@@ -82,10 +82,10 @@ gap: 10px;
     font-weight: 700;
     cursor: pointer;
 }
-#boton-mascota:hover{
+/*#boton-mascota:hover{
     background-color: yellow;
-    font-size: 18px;
-}
+    
+}*/
 input{
     display: none;
 }
