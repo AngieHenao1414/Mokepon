@@ -103,15 +103,17 @@ input:checked + label {
         display: flex; 
 }
 .boton-de-ataque,#boton-reiniciar{
-    padding: 30px;
+    padding: 20px;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 30px;
     background: pink;
     border-color: transparent;
     font-family: "Shadows Into Light", cursive;
     font-size: 25px;
     margin: 20px;
     font-weight: 700;
+    width: 110px;
+    height: 85px;
 }
 .boton-de-ataque:hover{
     border-color: blue;
