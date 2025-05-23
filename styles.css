@@ -154,6 +154,16 @@ input:checked + label {
     font-size: 25px;
     font-weight: 700;
   }
+  #ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #mapa{
+    border: 2px solid white;
+    border-radius: 20px;
+
+}
 
 @media (max-width:1220px){
     .tarjetas {
@@ -161,6 +171,7 @@ input:checked + label {
     }
     .tarjetas-ataques{
     display: contents;
+    
     }
 }
 
