@@ -26,6 +26,7 @@ let mokepones = []
 let ataqueJugador = [] 
 let ataqueEnemigo = []
 let opcionDeMokepones
+let jugadorId = null
 let inputHipodoge 
 let inputCapipepo  
 let inputRatigueya  
@@ -164,9 +165,20 @@ function iniciarJuego() {
     inputHipodoge.addEventListener('click', activarBoton)
     inputCapipepo.addEventListener('click', activarBoton)
     inputRatigueya.addEventListener('click', activarBoton)
-
+    unirseAlJuego()
 }
-
+function unirseAlJuego() {
+    fetch("http://localhost:8080/unirse")
+        .then(function (res) {
+            if (res.ok) {
+                res.text()
+                    .then(function (respuesta) {
+                        console.log(respuesta)
+                        jugadorId = respuesta
+                    })
+            }
+        })
+}
 function seleccionarMascotaJugador() {
     
     sectionSeleccionarMascota.style.display = 'none'
@@ -182,6 +194,7 @@ function seleccionarMascotaJugador() {
         spanMascotaJugador.innerHTML = inputRatigueya.id
         mascotaJugador = inputRatigueya.id
     } 
+    seleccionarMokepon(mascotaJugador)
     activarBoton()
     extraerAtaques(mascotaJugador)
     
@@ -189,6 +202,17 @@ function seleccionarMascotaJugador() {
     iniciarMapa()
 
     
+}
+function seleccionarMokepon(mascotaJugador) {
+    fetch(`http://localhost:8080/mokepon/${jugadorId}`, {
+        method: "post",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            mokepon: mascotaJugador
+        })
+    })
 }
 function activarBoton(){
     botonMascotaJugador.removeAttribute('disabled');  
