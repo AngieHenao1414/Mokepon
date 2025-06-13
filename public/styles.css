@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+.titulos-seccion{
+    display: flex;  
+}
+.titulos-seccion h1{
+    color: white;
+    width: 370px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 80px;
+}
+.subtitulos{
+    color: white;
+    width: 400px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 60px;
+
+}
+.titulos-seccion img{
+    width: 130px;
+    height: 110px; 
+     object-fit: fill;
+    }
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+body {
+    background: url(./assets/fondo1.jpg);
+    background-size: cover;
+    margin: 0;
+    
+}
+.tarjetas, .tarjetas-ataques {
+display: flex;
+gap: 10px;
+}
+.tarjeta-mokepon {
+    width: 400px;
+    height: 200px;
+    background-color: coral;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: "Shadows Into Light", cursive;
+    color: black;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 50px;
+    cursor: pointer;
+}
+.tarjeta-mokepon:hover{
+    background-color: yellow;
+}
+
+.tarjeta-mokepon img{
+    border-radius: 10px;
+    width: 180px;
+    object-fit: fill 
+}
+#boton-mascota{
+    height: 50px;
+    width: 140px;
+    border-radius: 40px;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 25px;
+    background: pink;
+    margin: 30px 10px 20px 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+#boton-mascota:hover{
+    background-color: yellow;
+    
+}
+input{
+    display: none;
+}
+   
+input:checked + label {
+    background-color: yellow;
+    font-weight: 900;
+    
+}
+
+#seleccionar-ataque{
+        flex-direction: column;
+        align-items: center;  
+        display: flex; 
+}
+.boton-de-ataque,#boton-reiniciar{
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: pink;
+    border-color: transparent;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 25px;
+    margin: 20px;
+    font-weight: 700;
+    width: 110px;
+    height: 85px;
+}
+.boton-de-ataque:hover{
+    border-color: blue;
+}
+
+
+
+#boton-reiniciar:hover{
+    background-color: yellow;
+}
+#mensajes{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    background-color: pink;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 700;
+}
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+  }
+  
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+  .ataqueJugador, .ataquesEnemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  #ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Shadows Into Light", cursive;
+    color: white;
+    font-size: 50px;
+  }
+  #ver-mapa button{
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: pink;
+    border-color: transparent;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 25px;
+    margin: 5px;
+    font-weight: 700;
+    width: 110px;
+    height: 85px;
+  }
+  #mapa{
+    border: 2px dashed white;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px 5px;
+}
+.botonesmapa{
+    display: flex; 
+    flex-direction: row;
+}
+@media (max-width:1220px){
+    .tarjetas {
+    flex-direction: column;
+    align-items: center;
+    width: 10px;
+    height: 15px;
+    justify-content: flex-start;    
+    }
+    .tarjetas-ataques{
+    display: contents;
+    justify-content: center;
+
+    }
+    #boton-mascota
+    {
+        padding: 5px;
+        margin: 685px 5px;
+
+    }
+}
+@media (max-width:450px){
+    #ver-mapa .botonesmapa{
+    flex-direction: column;
+    
+    }
+}
